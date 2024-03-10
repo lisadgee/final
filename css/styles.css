@@ -1,0 +1,364 @@
+/*Author: Lisa Gee
+Date: XX/XX/XX
+File Name: styles.css
+*/
+
+/* Adds a red border around each element */
+/* * {border:1px solid red} */
+
+
+* {
+  box-sizing: border-box;
+
+}
+
+
+.hobby-page {
+background-color:#c5a687;
+color: black;
+}
+
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+header {
+  background-color: lightgrey;
+}
+
+h1 {
+  text-align: center;
+  font-size: 50px;
+  color: #000000;
+  padding-top: 3%;
+
+}
+
+
+h3 {
+  color: black;
+}
+
+h4 {
+  color: white;
+}
+
+
+.index-imgs {
+  width: 250px;
+  height: 300px;
+}
+
+
+footer {
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+  font-size: 14px;
+  padding: 15px;
+}
+
+/* Links behavior based on state */
+/* unvisited link */
+a:link {
+  color: #ffffff;
+}
+
+/* visited link */
+a:visited {
+  color: white;
+}
+
+/* mouse over link */
+a:hover {
+  color: lightblue;
+}
+
+/* selected link */
+ a:active {
+  color: red;
+} */
+
+.quote {
+  font-style: italic;
+  color: black
+}
+
+/************************************** Hobby Tablet Viewport ****************************/
+
+
+/************************************** Tablets: ****************************/
+@media only screen and (min-width: 600px) {
+
+
+
+}
+
+/* Tablet navigation */
+nav {
+  background-color: #000000;
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+  }
+
+nav li {
+  display: block;
+  color: #f6eee4;
+  font-size: 1.5em;
+  font-family: Geneva, Arial, sans-serif;
+  font-weight: bold;
+}
+
+/* Change color of rows */
+.row-1 {
+  background-color: #d2afff;
+}
+
+.row-2 {
+  background-color:  lightgray;
+}
+
+
+/* Hide hero img */
+.hero-img {
+  display: none;
+  }
+
+  /* Hide figure captions */
+   figcaption {
+    display: none;
+    color: white;
+  }
+
+  /* Hide aside title */
+  .aside-title {
+    display: none;
+  }
+
+  /* Make the list of the company names smaller */
+  li {
+    font-size: 15px;
+
+
+  }
+
+  /* Wrapper for table - hide table and white "Employers label in mobile view */
+  .employerTbl, h4 {
+    display: none;
+
+  }
+
+  /* Show list of employers */
+.mobileEmployers {
+  display: block;
+  /* color: black; */
+}
+
+/* Switch from 3 cols to 2 cols on hobby page.  Hide col 1 text and only display pics */
+.col-1 {
+  display: none;
+}
+
+
+
+
+
+
+/************************************** Desktop: ****************************/
+@media only screen and (min-width: 768px) {
+
+  /* Desktop navigation */
+  nav {
+    background-color: #000000;
+    height: 100px;
+    display: block;
+    padding: 14px;
+    color: white;
+
+  }
+
+  nav ul {
+    list-style: none;
+    text-align: center;
+
+  }
+
+
+  nav li {
+    display: inline;  /*displays nav horizontally*/
+    font-size: 1.5em;
+    font-family: Geneva, Arial, sans-serif;
+    font-weight: bold;
+    padding-right: 30px;
+
+  }
+
+
+  .hero-img {
+    display: block;
+    /* display: show; */
+    /* padding: 30%;
+    margin: auto;
+    /* width: 75%; */
+    /* height: auto; */
+
+    /* max-width: 100%;
+  height: auto; */
+margin: auto;
+  }
+
+  .index-page {
+    color: black;
+    font-size: 20px;
+
+  }
+
+ /* First row */
+.row-1 {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+/* Create two equal columns that sits next to each other */
+.column-1 {
+  flex: 50%;
+  padding: 20px;
+}
+
+.hobby-imgs {
+  width: 300px;
+  height: 300px;
+}
+
+
+
+.column-2 {
+  flex: 50%;
+  padding: 20px;
+}
+
+ /* Second row */
+ .row-2 {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: gray;
+}
+
+/* Create two equal columns that sits next to each other */
+.column-3 {
+  flex: 50%;
+  /* background-color: lightpink; */
+  padding: 20px;
+}
+
+.column-4 {
+  flex: 50%;
+  /* background-color: salmon; */
+  padding: 20px;
+}
+
+ /* Show figure aside title*/
+.aside-title {
+  display: block;
+  color: black;
+}
+
+
+/* Align figures to center figcaptions */
+figure {
+ display: inline-block;
+
+}
+
+/* Show figure captions on hobby page */
+.hobby-caps {
+  display: block;
+  color: black;
+  font-size: 14px;
+  text-align: center;
+
+}
+
+  /* Show figure captions */
+  figcaption {
+    display: block;
+    color: black;
+    font-size: 14px;
+    text-align: center;
+
+  }
+
+  .goals-accomplishments {
+    color: black;
+  }
+
+  li {
+    font-size: 15px;
+  }
+
+
+  /* Table of employers */
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+
+  }
+
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+  /* Wrapper for table - show table*/
+ .employerTbl {
+  color: black;
+  display: block;
+  background-color: green;
+}
+
+/* Hide list of employers */
+.mobileEmployers {
+  display: none;
+
+}
+
+/* Columns on hobby page */
+.hobby-columns {
+  /* width: 100%; */
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  color: black;
+  background-color: white;
+  display: block;
+}
+
+.submit-button {
+  background-color: blue;
+  color: white;
+}
+
+.hobby-imgs {
+  max-width: 100%;
+  height: auto;
+  border: 6px solid #2a1f14;
+  box-shadow: 6px 6px 10px #c5a687;
+
+}
+
+.quote {
+  color: orange;
+}
+
+}
